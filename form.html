@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="index.css">
+
+
+          <title>Form</title>
+          <style>
+                    .container {
+                        margin-top: 50px;
+                        margin-left: 3%;
+                    }
+
+                    #textarea {
+                        margin-left: 10%;
+                        resize: vertical;
+                    }
+
+                    .form-item {
+                        width: 100%;
+                        margin-top: 20px;
+                        font-size: 20px;
+          
+                    }
+
+                    .form-item input,
+                    .form-item textarea {
+                        width: 90%;
+                        padding: 10px;
+                        font-size: 18px;
+                        background-color: #eee;
+                        border: 1px solid black;
+                        margin-top: 5px;
+                     }
+
+              
+              
+                          
+              
+
+                    @media only screen and (min-width: 768px) {
+                   .container {
+                        margin-left: 30%;
+                        width: 25em;
+                        padding: 25px;
+                        color: #fff;
+                        background-color: #008000;
+                              }
+                     }
+          </style>
+</head>
+<body>
+          <div class="container">
+                    <form action="form-to-email.php" method="POST" name="myemailform" id="my-form">
+
+                              <div class="form-item">
+                                        <label for="first name" name="firstname" id="firstName">First Name</label>
+                                        <input type="text" placeholder="First Name">
+                              </div>
+                              <div class="form-item">
+                                        <label for="first name" name="lastname" id="lastName">Last Name</label>
+                                        <input type="text" placeholder="Last Name">
+                              </div>
+                              <div class="form-item">
+                                        <label for="email" name="email" id="email">Email Address</label>
+                                        <input type="text" placeholder="Email">
+                              </div>
+                              <div class="form-item">
+                                        <label for="message" name="message">Message</label>
+                                        <textarea type="text" id="message" name="message"
+                                        placeholder="Please type your message here including
+                                        your email, name and Address. Thanks" cols="30" rows="10"></textarea>
+                              </div>
+                              <div class="form-item">
+                                        <input  type="submit" name="submit" value="Send Form"></input>
+                              </div>
+
+                    </form>
+          </div>
+
+
+          <script src="form.js"></script>
+          <script src="form.php"></script>
+</body>
+</html>
